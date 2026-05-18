@@ -127,7 +127,7 @@ One of the central parts of the project was comparing both pipelines under the s
 | Training Complexity | Higher | Moderate |
 | Generalization | Stronger | Moderate |
 | Prediction Stability | High | Variable |
-| Best Overall Accuracy | ✓ | — |
+| Best Overall Accuracy | 98.8% | 92.3% |
 
 ### Key Observations
 
@@ -153,6 +153,7 @@ The repository includes a complete Streamlit-based interface for real-time infer
 - Disease descriptions
 - Severity estimation
 - Treatment recommendations
+-The application provides a unified inference layer where both models can be executed and compared in real-time through a single GUI.
 
 The interface was designed to move beyond a minimal prototype and provide a cleaner deployment experience suitable for demonstrations and research presentations.
 
@@ -160,7 +161,7 @@ The interface was designed to move beyond a minimal prototype and provide a clea
 
 # Dataset
 
-The models were trained and evaluated using the **PlantVillage Dataset**, a widely used benchmark dataset for plant disease classification tasks.
+The models were trained and evaluated using the /kaggle/input/datasets/vipoooool/new-plant-diseases-dataset, a widely used benchmark dataset for plant disease classification tasks.
 
 ### Dataset Summary
 
@@ -192,10 +193,10 @@ The models were trained and evaluated using the **PlantVillage Dataset**, a wide
 
 | Model | Accuracy | Precision | Recall | F1-Score |
 |---|---|---|---|---|
-| EfficientNetV2B0 | XX.X% | XX.X% | XX.X% | XX.X% |
-| Voting Ensemble | XX.X% | XX.X% | XX.X% | XX.X% |
-| SVM | XX.X% | XX.X% | XX.X% | XX.X% |
-| Random Forest | XX.X% | XX.X% | XX.X% | XX.X% |
+| EfficientNetV2B0 | 98.8% | 98.9% | 98.9% | 98.8% |
+| Voting Ensemble | 92.3% | 92.6% | 92.3% | 92.3% |
+| SVM | 92.9% | 93.2% | 92.3% | 92% |
+| Random Forest | 87.4% | 87.9% | 87.4% | 87.3% |
 
 ### Evaluation Notes
 
@@ -205,75 +206,26 @@ The classical ML ensemble remained competitive in several categories, particular
 
 ---
 
-## Suggested Visualizations
-
-### Training Curves
-Place training/validation accuracy and loss curves here.
-
-```md
-![Training Curves](assets/training-curves.png)
-```
-
----
-
-### Confusion Matrix
-Add the confusion matrix for the final EfficientNetV2 model.
-
-```md
-![Confusion Matrix](assets/confusion-matrix.png)
-```
-
----
-
-### System Architecture Diagram
-Include the DL vs Classical ML architecture comparison.
-
-```md
-![Architecture Diagram](assets/architecture-diagram.png)
-```
-
----
-
-### GUI Preview
-Add screenshots from the Streamlit application.
-
-```md
-![GUI Preview](assets/gui-preview.png)
-```
-
----
-
 # Project Structure
 
 ```bash
 PlantGuard-AI/
-│
-├── app/
-│   ├── streamlit_app.py
-│   ├── preprocessing.py
-│   └── utils.py
+|
+├── streamlit_app.py
+│   
 │
 ├── models/
 │   ├── final_model.keras
 │   ├── ensemble.pkl
 │   └── class_names.json
 │
-├── notebooks/
-│   ├── deep_learning_training.ipynb
-│   ├── ml_pipeline.ipynb
-│   ├── evaluation.ipynb
-│   └── experiments.ipynb
+├── notebooks.ipynb
+│  
 │
 ├── assets/
-│   ├── gui-preview.png
-│   ├── architecture-diagram.png
-│   ├── confusion-matrix.png
-│   └── training-curves.png
+│   ├── gui.png
+│   └── confusion_matrix.png
 │
-├── results/
-│   ├── metrics_summary.csv
-│   ├── classification_report.txt
-│   └── evaluation_logs.txt
 │
 ├── requirements.txt
 ├── README.md
@@ -355,23 +307,15 @@ The project also reinforced that building a usable AI system involves more than 
 
 ---
 
-# Paper Reference *(Optional)*
+## Future Work
 
-If this work is later included in a conference paper or IEEE publication, the citation can be added here.
-
-```bibtex
-@article{plantguard2026,
-  title={PlantGuard-AI: Comparative Deep Learning and Classical Machine Learning Approaches for Plant Disease Detection},
-  author={Author Name},
-  year={2026}
-}
-```
+This project may be extended into a research paper focusing on comparative analysis between deep learning and classical machine learning approaches for plant disease detection.
 
 ---
 
 # Author
 
-**[Your Name]**  
+Aya Mahmoud Alhareidi  
 Computer Science / Artificial Intelligence Student
 
 Focused on Computer Vision, Machine Learning, and applied AI systems with an interest in practical deployment and research-oriented development.
