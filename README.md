@@ -153,7 +153,7 @@ The repository includes a complete Streamlit-based interface for real-time infer
 - Disease descriptions
 - Severity estimation
 - Treatment recommendations
--The application provides a unified inference layer where both models can be executed and compared in real-time through a single GUI.
+- The application provides a unified inference layer where both models can be executed and compared in real-time through a single GUI.
 
 The interface was designed to move beyond a minimal prototype and provide a cleaner deployment experience suitable for demonstrations and research presentations.
 
