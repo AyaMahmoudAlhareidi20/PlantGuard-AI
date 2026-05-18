@@ -161,7 +161,7 @@ The interface was designed to move beyond a minimal prototype and provide a clea
 
 # Dataset
 
-The models were trained and evaluated using the /kaggle/input/datasets/vipoooool/new-plant-diseases-dataset, a widely used benchmark dataset for plant disease classification tasks.
+The models were trained and evaluated using the "/kaggle/input/datasets/vipoooool/new-plant-diseases-dataset", a widely used benchmark dataset for plant disease classification tasks.
 
 ### Dataset Summary
 
@@ -183,6 +183,16 @@ The models were trained and evaluated using the /kaggle/input/datasets/vipoooool
 - Pepper
 - Strawberry
 
+---
+## Trained Models
+
+The project includes pre-trained models used for inference:
+
+- Deep Learning model: "/kaggle/input/datasets/ayamahmoudalhareidi/dmprojectds"
+- Classical ML ensemble: "/kaggle/input/datasets/ayamahmoudalhareidi/ml-models"
+- Class labels: "/kaggle/input/datasets/ayamahmoudalhareidi/dmprojectds"
+
+These models are required to run the Streamlit application.
 ---
 
 # Results
