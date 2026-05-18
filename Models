@@ -1,0 +1,9 @@
+## Trained Models
+
+The project includes pre-trained models used for inference:
+
+- Deep Learning model: "/kaggle/input/datasets/ayamahmoudalhareidi/dmprojectds"
+- Classical ML ensemble: "/kaggle/input/datasets/ayamahmoudalhareidi/ml-models"
+- Class labels: "/kaggle/input/datasets/ayamahmoudalhareidi/dmprojectds"
+
+These models are required to run the Streamlit application.
