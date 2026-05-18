@@ -211,7 +211,7 @@ The classical ML ensemble remained competitive in several categories, particular
 ```bash
 PlantGuard-AI/
 |
-├── streamlit_app.py
+├── plant_app.py
 │   
 │
 ├── models/
