@@ -1,0 +1,10 @@
+tensorflow==2.10.0
+numpy
+pandas
+scikit-learn>=1.2.0
+streamlit
+opencv-python-headless
+pillow
+matplotlib
+seaborn
+joblib
