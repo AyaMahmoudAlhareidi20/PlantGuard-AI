@@ -193,6 +193,7 @@ The project includes pre-trained models used for inference:
 - Class labels: "/kaggle/input/datasets/ayamahmoudalhareidi/dmprojectds"
 
 These models are required to run the Streamlit application.
+
 ---
 
 # Results
